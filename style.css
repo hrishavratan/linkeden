@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000E6;
+}
+header{
+    height:54px;
+    width:100%;
+    background-color: #ffffffff;
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    position:fixed;
+    top:0px;
+    z-index:11;
+}
+
+.homesrch{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.homesrch input{
+    height:30px;
+    background-color: #EEF3F8;
+    padding-left:16px;
+    width:240px;
+    border-radius:5px;
+}
+.pages{
+    display:flex;
+    gap:10px;
+}
+.logo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+}
+#business{
+    margin-left:25px;
+    display:flex;
+    gap:10px;
+}
+@media only screen and (max-width:1000px)
+{
+    .homesrch input{
+        display:none;
+    }
+}
+@media screen and (max-width:768px)
+{
+    .logo p
+    {
+        display:none;
+    }
+    .pages{
+        gap:20px;
+    }
+    #business{
+        gap:18px;
+    }
+}
+@media screen and (max-width:450px) 
+{
+    #business
+    {
+        display:none;
+    }
+}
+@media screen and (max-width:305px)
+{
+    .homesrch{
+        display:none;
+    }
+}
+
+
+
+main{
+    background: #dfd8d8;
+    position:relative;
+    top:54px;
+    padding:12px 0;
+    display:flex;
+    justify-content:space-around;
+}
+
+
+@media screen and (max-width:668px)
+{
+    main{
+        flex-direction: column;
+        gap:8px;
+        align-items: center;
+    }
+}
+
+
+
+
+#first{
+    background: #ffffff;
+    width:225px;
+    height:min-content;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:668px)
+{
+    #first{
+        width:90%;
+    }
+}
+#color{
+    background-color: #bbbdc0;
+    height:60px;
+    width:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#first img{
+    height:70px;
+    width:70px;
+    border-radius: 50%;
+    margin-top:-35px;
+    margin-bottom: 20px;
+}
+
+#first h4{
+    margin-bottom: 10px;
+}
+#first h4:hover{
+    border-bottom:2px solid black;
+    cursor: pointer;
+}
+
+
+
+#bio{
+    padding-bottom:10px;
+    padding-left: 8px;
+    border-bottom:1px solid black;
+}
+
+#views p,#views b,#impression p,#impression b{
+    display:inline-block;
+    font-size: small;
+}
+#views,#impression{
+    width:14em;
+    box-sizing: border-box;
+    display:flex;
+    justify-content:space-around;
+    margin-top:10px;
+    box-sizing: border-box;
+}
+#impression{
+    margin-bottom:10px;   
+}
+
+#views b,#impression b{
+    color:blue;
+}
+
+#views:hover{
+    background-color: rgb(168, 164, 164);
+}
+#impression:hover{
+    background-color: rgb(168, 164, 164);
+}
+
+#prem{
+    border-top:1px solid black;
+    padding-top:15px;
+    padding-bottom:15px;
+    border-bottom: 1px solid black;
+    padding-left:14px;
+    box-sizing: border-box;
+    width:100%;
+}
+#prem:hover{
+    background-color: rgb(197, 197, 197);
+}
+
+#prem b{
+    border-bottom:2px solid black;
+}
+#prem b:hover{
+    color:blue;
+    border-bottom:2px solid blue;
+}
+
+#bookmark{
+    padding:15px 0;
+    width:100%;
+    padding-left:35px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#bookmark:hover{
+    background-color: #bbbdc0;
+}
+#gaps{
+    background: #dfd8d8;
+    height:8px;
+    width:100%;
+    border-radius:8px;
+}
+
+.recent {
+    margin:24px 0;
+}
+.recent ul{
+    margin-top:12px;
+    list-style-type: disc;
+    list-style-position:inside;
+}
+.recent li{
+    font-size: smaller;
+    padding:3px 0;
+    width:100%;
+}
+.recent li:hover{
+    background-color: #bbbdc0;
+}
+.grp{
+    color:blue;
+}
+.grp:hover{
+    border-bottom:1px solid blue;
+    cursor: pointer;
+}
+.evn{
+    margin:16px 0 12px -100px;
+}
+
+
+
+
+
+
+
+#second{
+    width:555px;
+}
+@media screen and (max-width:1225px) and (min-width:669px)
+{
+    #second{
+        width:388px;
+    }
+}
+@media screen and (max-width:668px)
+{
+    #second{
+        width:90%;
+    }
+}
+#post{
+    background-color: #ffffff;
+    display:flex;
+    flex-direction: column;
+    padding:10px 16px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    gap:20px;
+}
+#start{
+    display:flex;
+    gap:20px;
+}
+#start img{
+    border-radius: 50%;
+}
+#start input{
+    width:80%;
+    border-radius:50px;
+    padding-left:20px;
+    box-sizing: border-box;
+}
+
+#docs{
+    display:flex;
+    justify-content: space-evenly;
+    margin-left:10px;
+    box-sizing: border-box;
+}
+#docs p{
+    padding:10px;
+}
+
+@media screen and (max-width:300px)
+{
+    #docs p{
+        padding:5px;
+    }
+}
+#docs p:hover{
+    background-color: #bbbdc0;
+    border-radius: 5px;
+}
+
+#hr{
+    padding:15px;
+}
+
+.timeline{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding:16px;
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+    box-sizing: border-box;
+    margin:8px 0;
+}
+.dp{
+    border-radius: 50%;
+}
+.above{
+    display:flex;
+    gap:12px;
+}
+.likes{
+    display:flex;
+    justify-content: space-between;
+}
+.com{
+    display:flex;
+    gap:8px;
+}
+.likes p:hover{
+    color:blue;
+    border-bottom:1px solid blue;
+    cursor: pointer;
+}
+.share{
+    display:flex;
+    justify-content: space-evenly;
+}
+.share p{
+    padding:12px 20px;
+    border-radius:4px;
+}
+
+@media screen and (max-width:340px)
+{
+    .share p{
+        padding:5px;
+    }
+}
+.share p:hover{
+    background-color: #bbbdc0;
+    cursor: pointer;
+}
+
+
+
+
+
+#third{
+    width:300px;
+    height:300px;
+    background-color: #ffffff;
+    padding:12px 0px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+@media screen and (max-width:930px) and (min-width:669px)
+{
+    #third{
+        display:none;
+    }
+}
+
+@media screen and (max-width:668px)
+{
+    #third{
+        display:contents;
+        width:80%;
+    }
+}
+#third h3{
+    padding-bottom:16px;
+    padding-left:18px;
+    box-sizing: border-box;
+}
+#third ul{
+    list-style-position: inside;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+#third li{
+    padding-left:5px;
+    box-sizing: border-box;
+}
+#third small{
+    margin-left:23px;
+}
